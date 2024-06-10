@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"EncoderDecoder"},{"p":"<Unnamed>","l":"IDBChecker"},{"p":"<Unnamed>","l":"ProjectDate"},{"p":"<Unnamed>","l":"SquareMatrix2"}];updateSearchResults();
