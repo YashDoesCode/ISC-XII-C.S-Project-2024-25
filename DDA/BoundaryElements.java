@@ -2,16 +2,16 @@ package DDA;
 
 import java.util.Scanner;
 
-public class BoundaryElements{
+public class BoundaryElements {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        
         System.out.print("Enter the order of the square matrix: ");
         int order = scanner.nextInt();
         int[][] matrix = new int[order][order];
-
+        
         System.out.println("Enter the boundary elements of the square matrix:");
-
+        
         System.out.print("Top row: ");
         for (int i = 0; i < order; i++) {
             matrix[0][i] = scanner.nextInt();
@@ -35,5 +35,23 @@ public class BoundaryElements{
             }
             System.out.println();
         }
+        int boundarySum = calculateBoundarySum(matrix, order);
+        System.out.println("Sum of all boundary elements: " + boundarySum);
+    }
+    public static int calculateBoundarySum(int[][] matrix, int order) {
+        int sum = 0;
+        for (int i = 0; i < order; i++) {
+            sum += matrix[0][i];
+        }
+        for (int i = 1; i < order - 1; i++) {
+            sum += matrix[i][order - 1];
+        }
+        for (int i = 0; i < order; i++) {
+            sum += matrix[order - 1][i];
+        }
+        for (int i = 1; i < order - 1; i++) {
+            sum += matrix[i][0];
+        }
+        return sum;
     }
 }

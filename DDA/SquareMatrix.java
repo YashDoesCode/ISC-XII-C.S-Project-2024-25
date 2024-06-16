@@ -1,12 +1,13 @@
 package DDA;
+
 import java.util.Scanner;
 
-public class ArrayClockwiseRotate {
-    private int[][] a;
-    private int[][] b;
-    private int r;
-    private int c;
-    public ArrayClockwiseRotate(int x, int y) {
+public class SquareMatrix {
+    int[][] a;
+    int[][] b;
+    int r, c;
+
+    public SquareMatrix(int x, int y) {
         r = x;
         c = y;
         a = new int[r][c];
@@ -38,7 +39,6 @@ public class ArrayClockwiseRotate {
             System.out.println();
         }
     }
-
     public void displayRotatedArray() {
         System.out.println("Rotated Matrix:");
         for (int i = 0; i < c; i++) {
@@ -48,7 +48,15 @@ public class ArrayClockwiseRotate {
             System.out.println();
         }
     }
+    public void sumOfCornerElements() {
+        if (r < 2 || c < 2) {
+            System.out.println("Matrix is too small to have corner elements.");
+            return;
+        }
 
+        int sum = a[0][0] + a[0][c-1] + a[r-1][0] + a[r-1][c-1];
+        System.out.println("Sum of corner elements: " + sum);
+    }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -57,7 +65,7 @@ public class ArrayClockwiseRotate {
         System.out.print("Enter the number of columns: ");
         int cols = input.nextInt();
 
-        ArrayClockwiseRotate matrix = new ArrayClockwiseRotate(rows, cols);
+        SquareMatrix matrix = new SquareMatrix(rows, cols);
 
         matrix.fillArray();
         matrix.displayOriginalArray();
@@ -65,5 +73,7 @@ public class ArrayClockwiseRotate {
         System.out.println("Rotated 90 degrees clockwise:");
         matrix.rotate90DegClock();
         matrix.displayRotatedArray();
+
+        matrix.sumOfCornerElements();
     }
 }
