@@ -1,5 +1,31 @@
 package NumberBased;
-/*
+/**
+Question 15:
+
+A number is said to be Bouncy Number if the digits of the number are unsorted. For example:
+> 22344, Is not a bouncy number because the digits are sorted in Ascending order.
+> 774410, Is not a Bouncy number because the digits are unsorted.
+> 155349, Is a bouncy number because the digits are unsorted.
+
+NOTE: A number below 100 can never be a Bouncy number. 
+Write a program in Java using Recursion to accept a number. Check and display whether it is a Bouncy number or not.
+
+Examples
+
+INPUT: 155349
+OUTPUT: It is a Bouncy Number
+------------------------------------------------------
+INPUT: 123456
+OUTPUT: It is not a Bouncy Number
+------------------------------------------------------
+INPUT: 4321
+OUTPUT: It is not a Bouncy Number
+------------------------------------------------------
+INPUT: 98
+OUTPUT: A number below 100 can never be a Bouncy Number
+-------------------------------------------------------
+Algorithm
+
 1. Start
 2. Define the `BouncyNumber` class.
 3. Inside the class, define the `main` method.

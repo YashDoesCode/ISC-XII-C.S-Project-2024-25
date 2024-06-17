@@ -1,5 +1,22 @@
 package NumberBased;
-/*
+/**
+An Evil Number is a positive whole number which has even number of 1’s in its Binary equivalent.
+For Example: Binary Equivalent of 9 is 100, Which contains even number of 1’s. A few evil numbers are 3, 5, 6, 9. Design a program to accept a positive whole number and find the binary equivalent of the number and count the number of 1’s in it and display whether it is a Evil Number or not using Recursion, with an appropriate message.
+
+Examples
+
+INPUT: 15
+       Binary Equivalent = 1111
+       Number of 1's = 4
+OUTPUT: Evil Number
+----------------------------------------------------
+INPUT: 26
+       Binary Equivalent = 11010
+       Nuumber of 1's = 3
+OUTPUT: Not an Evil Number
+----------------------------------------------------
+Algorithm
+
 1. Start
 2. Import `java.util.Scanner`
 3. Define the `EvilNumber` class
@@ -19,7 +36,7 @@ package NumberBased;
 17. Otherwise, print "The number is not an evil number."
 18. Close the `Scanner` object
 19. End the `main` method
-20. End the program
+20. End
  */
 import java.util.Scanner;
 

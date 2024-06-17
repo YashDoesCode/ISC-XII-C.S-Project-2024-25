@@ -1,6 +1,6 @@
 package SamplePaper1;
 
-/*import java.util.Scanner;
+import java.util.Scanner;
 
 public class Matrix {
     static int m, n;
@@ -79,4 +79,3 @@ public class Matrix {
         obj.sum();
     }
 }
-*/

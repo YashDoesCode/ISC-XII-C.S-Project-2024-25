@@ -1,5 +1,20 @@
 package NumberBased;
-/*
+/**
+Question 17:
+
+A Unique Digit integer is a positive integer (without Leading-zeros) and with no duplicate digits. Given two positive integers ‘a’ and ‘b’. Write a program in Java to determine how many unique digit integer are there in the range between ‘a’ and ‘b’ and output them.
+
+Example
+
+INPUT: Enter the values of m and n :
+       a=100 
+       b=120 
+OUTPUT: The Unique digit integers are:
+        102, 103, 104, 105, 106, 107, 108, 109, 120
+        Frequency = 9
+
+Algorithm
+
 1. Start
 2. Import the `java.util.Scanner` package.
 3. Define the `UniqueNumber` class.

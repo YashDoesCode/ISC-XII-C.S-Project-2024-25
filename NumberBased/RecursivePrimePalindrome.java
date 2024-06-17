@@ -1,5 +1,27 @@
 package NumberBased;
-/*
+/**
+Design a class “RecursivePrimePalindrome” to generate prime palindrome numbers. 
+For Example: 11 (where 11 is a Prime number and a palindrome number)
+Some of the members of the class are given below:
+
+Class Name: RecursivePrimePalindrome
+
+Data Members/Instance Variables
+
+Start :To store the start of range
+end :To store the end of range
+
+Member Methods/Functions
+
+PrimePalinGen (int a, int b) :Parameterized constructor to initialize the data members ‘a’ and end=b
+int isPrime (int i) :Return 1 if the number is Prime other return 0
+int isPalin (int i) :Return 1 if the number is a palindrome otherwise return 0
+void generate () :Generate all Prime Palindrome number between start and end by invoking the function and isPrime() and isPalin()
+
+Specify the class “RecursivePrimePalindrome” giving details of the constructor(), int isPrime (int), int isPalin (int) and void generate(). Define a main() function to create an object and call the functions accordingly to end the task.
+
+Algorithm
+
 1. Start
 2. Import `java.util.Scanner`
 3. Define the `RecursivePrimePalindrome` class
@@ -20,6 +42,7 @@ package NumberBased;
 18. Recursively call `isPrime(n, i + 1)`
 19. Define `isPalindrome` method with `n`, `reversed`, and `original`
 20. If `n == 0`, return `reversed == original`; else, update `reversed` and call `isPalindrome(n / 10, reversed, original)`
+21. End
  */
 import java.util.Scanner;
 
