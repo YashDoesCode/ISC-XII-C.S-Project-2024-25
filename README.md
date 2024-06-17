@@ -1,4 +1,6 @@
 # ISCXII-CSProject2024-25
+![image](https://github.com/YashDoesCode/XII-C.S-Project-2024-25/assets/169293586/530d8252-e827-4019-b2e7-2aaacb406fa6)
+
 # Question 1 :
 
 Write a code in Java to create a class named “MaxMinAvgArray” and perform the following functions as listed below :
