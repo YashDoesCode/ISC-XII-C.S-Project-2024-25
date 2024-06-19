@@ -1996,6 +1996,8 @@ Create the main method and perform function calling.
 ### Program
 
 ```java
+import java.util.Scanner;
+
 public class DisariumNumber
 {
       static boolean check(int n)
@@ -2014,7 +2016,9 @@ public class DisariumNumber
     }
       public static void main(String[] args)
     {
-        int n = 89;
+        Scanner scanner = new Scanner (System.in);
+        
+        int n = scanner.nextInt();
         
         System.out.println(check(n) ? "Disarium Number" : "Not a Disarium Number");
     }
@@ -2429,634 +2433,818 @@ public class RecursiveCompositeMagicNumber {
 
 ---
 
-- Sample Paper 1
-    
-    # Question 22: `ERRORED`
-    
-    # Question 21:
-    
-    Write a Program to declare a matrix A[ ][ ] of order (M*N) where ‘M’ is the number of rows and ‘N’ is the number of columns such that both M and N must be greater than 2 and less than 10. Allow the user to input integers into this matrix. Display appropriate error message for an invalid input.
-    
-    Perform the following tasks on the matrix.
-    
-    1. Display the input matrix.
-    2. Rotate the matrix by 270⁰ degrees anti-clock wise and display the resultant matrix.
-    3. Calculate the sum of the odd elements of the matrix and display.
-    
-    Test your program for the following data and some random data:
-    
-    $Example 1→$
-    
-    ```java
-    **INPUT:** M=3
-           N=4
-           ENTER ELEMENTS: 8, 7, 9, 3, -2, 0, 4, 5, 1, 3, 6, -4
-           
-    **OUTPUT: ORIGINAL MATRIX** 
-            
-    ```
-    
-    | 8 | 7 | 9 | 3 |
-    | --- | --- | --- | --- |
-    | -2 | 0 | 4 | 5 |
-    | 1 | 3 | 6 | -4 |
-    
-    **ROTATED MATRIX (270⁰ ANTI-CLOCK WISE)**
-    
-    | 1 | -2 | 8 |
-    | --- | --- | --- |
-    | 3 | 0 | 7 |
-    | 6 | 4 | 9 |
-    | -4 | 5 | 3 |
-    
-    **SUM OF THE ODD ELEMENTS =28**
-    
-    $Example 2→$
-    
-    ```java
-    **INPUT:** M=3
-           N=2
-           ENTER ELEMENTS: 9, 13, 41, 5, 6, -5
-           
-    **OUTPUT: ORIGINAL MATRIX** 
-            
-    ```
-    
-    | 9 | 13 | 41 |
-    | --- | --- | --- |
-    | 5 | 6 | -5 |
-    
-    **ROTATED MATRIX (270⁰ ANTI-CLOCK WISE)**
-    
-    | 5 | 9 |
-    | --- | --- |
-    | 6 | 13 |
-    | -5 | 41 |
-    
-    **SUM OF THE ODD ELEMENTS =63**
-    
-    $Example 3→$
-    
-    ```java
-    **INPUT:** M=2
-           N=10
-    **OUTPUT:** INVALID INPUT
-    ```
-    
-    ### Algorithm
-    
-    ### Program
-    
-    # Question 23: `ERRORED`
-    
-    **Keyword cipher** is a form of eneryption technique. A keyword is used as the key, and it
-    determines the letter matching the cipher alphabet to the plain alphabet. Repeats of letters in the word are removed, then the cipher alphabet is generated with the keyword matching to A, B, C etc. until the keyword is used up, whereupon the rest of the cipher text letters are used in
-    alphabetical order, excluding those already used in the key.
-    
-    **Encryption:**
-    The first line of input contains the keyword which you wish to enter. The second line of input
-    contains the string which you have to encrypt.
-    
-    **Plaintext:** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-    
-    **Encrypted:** K R Y P T O S A B C D E F G H I J L M N Q U V W X Z
-    
-    **Example →**
-    
-    Encrypting the message: KNOWLEDGE IS POWER when, Keyword is KRYPTOS
-    
-    **Decoded Message →** DGHVETPST BM IHVTL
-    
-    Write a program to accept a Coded text in upper case and a Keyword. Using the above technique
-    decrypt the text and display.
-    Note: ***All the messages are encoded in uppercase. Whitespace, special characters, and
-    numbers remains unchanged.***
-    
-    Test your program for the following inputs:
-    
-    **$Example 1→$**
-    
-    ```java
-    **INPUT:** ENTER KEYWORD: SECRET
-           ENTER TEXT TO BE DECODED: ZLJEFT DTOT
-    **OUTPUT:** DECODED TEXT: ZOMBIE HERE
-    ```
-    
-    **$Example 2 →$**
-    
-    ```java
-    **INPUT:** ENTER KEYWORD: STAR WARS
-           ENTER TEXT TO BE DECODED: SPPSAG SP RSVJ
-    **OUTPUT:** DECODED TEXT: ATTACK AT DAWN
-    ```
-    
-    **$Example 3→$**
-    
-    ```java
-    **INPUT:** ENTER KEYWORD: PLAYERS
-           ENTER TEXT TO BE DECODED: Haln de yokl
-    **OUTPUT: INVALID INPUT**
-    ```
-    
-- Sample Paper 2
-    
-    # Question 24:
-    
-    Write a program in JAVA to accept day number (between I and 366) and year (yyyy) from the
-    user and display the corresponding date. Also aocept 'N' from the user where (1 <- N <= 100) to
-    compute and display the future date 'N' days after the given date. Display error message if the
-    value of the day number or "N' are not within the limit. Day number is calculated taking 1 January
-    of the given year as 1.
-    
-    Test your program with given set of data and some random data
-    
-    **Example 1**
-    
-    **INPUT:** DAY NUMBER: 50
-    
-                  YEAR: 2023
-    
-                   N: 25
-    
-    **OUTPUT:** ENTERED DATE: FEBRUARY 19, 2023
-    
-                      25 DAYS LATER: MARCH 16, 2023
-    
-    **Example 2**
-    
-    **INPUT:** DAY NUMBER: 321
-    
-                  YEAR: 2023
-    
-                   N: 77
-    
-    **OUTPUT:** ENTERED DATE: NOVEMBER17, 2023
-    
-                      77 DAYS LATER: FEBRUARY 2, 2024
-    
-    **Example 3**
-    
-    **INPUT:** DAY NUMBER: 400
-    
-                  YEAR: 2023
-    
-                   N: 125
-    
-    **OUTPUT:** INCORRECT DAY NUMBER
-                       INCORRECT VALUE OF ‘N’
-    
-    ### Algorithm
-    
-    1. Start.
-    2. Import `java.util.Scanner`.
-    3. Define `FutureDate` class with `main` method.
-    4. Create `Scanner` object to read input.
-    5. Read and store day number (1-366).
-    6. Read and store year (yyyy).
-    7. Read and store N (1-100).
-    8. Validate day number (1-366).
-    9. If invalid, print "INCORRECT DAY NUMBER" and exit.
-    10. Validate N (1-100).
-    11. If invalid, print "INCORRECT VALUE OF 'N'" and exit.
-    12. Define arrays `daysInMonths` and `monthNames`.
-    13. Initialize `month` and `day` to 0.
-    14. Iterate to find month for entered day.
-    15. Calculate remaining day in month.
-    16. Print entered date.
-    17. Add N days to entered day.
-    18. Handle month and year change if necessary.
-    19. Print date N days later.
-    20. End.
-    
-    ### Variable Description Table
-    
-    | Sr. No. | Variable Name | Data Type | Description |
-    | --- | --- | --- | --- |
-    | 1 | scanner | Scanner | Used to take input from the user. |
-    | 2 | dayNumber | int | Stores the day number entered by the user (between 1 and 366). |
-    | 3 | year | int | Stores the year entered by the user (format yyyy). |
-    | 4 | N | int | Stores the value of N entered by the user (number of days to add). |
-    | 5 | daysInMonths | int[] | Array containing the number of days in each month. |
-    | 6 | monthNames | String[] | Array containing the names of the months. |
-    | 7 | month | int | Stores the index of the month derived from the day number. |
-    | 8 | day | int | Stores the day of the month derived from the day number and used to calculate the future date. |
-    
-    ### Program
-    
-    ```java
-    import java.util.Scanner;
-    
-    public class FutureDate {
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-    
-            System.out.print("Enter day number (between 1 and 366): ");
-            int dayNumber = scanner.nextInt();
-    
-            System.out.print("Enter year (yyyy): ");
-            int year = scanner.nextInt();
-    
-            System.out.print("Enter value of N (1 <= N <= 100): ");
-            int N = scanner.nextInt();
-    
-            if (dayNumber < 1 || dayNumber > 366) {
-                System.out.println("INCORRECT DAY NUMBER");
-                return;
+# Question 22: `ERRORED`
+
+# Question 21:
+
+Write a Program to declare a matrix A[ ][ ] of order (M*N) where ‘M’ is the number of rows and ‘N’ is the number of columns such that both M and N must be greater than 2 and less than 10. Allow the user to input integers into this matrix. Display appropriate error message for an invalid input.
+
+Perform the following tasks on the matrix.
+
+1. Display the input matrix.
+2. Rotate the matrix by 270⁰ degrees anti-clock wise and display the resultant matrix.
+3. Calculate the sum of the odd elements of the matrix and display.
+
+Test your program for the following data and some random data:
+
+$Example 1→$
+
+```java
+**INPUT:** M=3
+       N=4
+       ENTER ELEMENTS: 8, 7, 9, 3, -2, 0, 4, 5, 1, 3, 6, -4
+       
+**OUTPUT: ORIGINAL MATRIX** 
+        
+```
+
+| 8 | 7 | 9 | 3 |
+| --- | --- | --- | --- |
+| -2 | 0 | 4 | 5 |
+| 1 | 3 | 6 | -4 |
+
+**ROTATED MATRIX (270⁰ ANTI-CLOCK WISE)**
+
+| 1 | -2 | 8 |
+| --- | --- | --- |
+| 3 | 0 | 7 |
+| 6 | 4 | 9 |
+| -4 | 5 | 3 |
+
+**SUM OF THE ODD ELEMENTS =28**
+
+$Example 2→$
+
+```java
+**INPUT:** M=3
+       N=2
+       ENTER ELEMENTS: 9, 13, 41, 5, 6, -5
+       
+**OUTPUT: ORIGINAL MATRIX** 
+        
+```
+
+| 9 | 13 | 41 |
+| --- | --- | --- |
+| 5 | 6 | -5 |
+
+**ROTATED MATRIX (270⁰ ANTI-CLOCK WISE)**
+
+| 5 | 9 |
+| --- | --- |
+| 6 | 13 |
+| -5 | 41 |
+
+**SUM OF THE ODD ELEMENTS =63**
+
+$Example 3→$
+
+```java
+**INPUT:** M=2
+       N=10
+**OUTPUT:** INVALID INPUT
+```
+
+### Algorithm
+
+### Program
+
+# Question 23:
+
+**Keyword cipher** is a form of eneryption technique. A keyword is used as the key, and it
+determines the letter matching the cipher alphabet to the plain alphabet. Repeats of letters in the word are removed, then the cipher alphabet is generated with the keyword matching to A, B, C etc. until the keyword is used up, whereupon the rest of the cipher text letters are used in
+alphabetical order, excluding those already used in the key.
+
+**Encryption:**
+The first line of input contains the keyword which you wish to enter. The second line of input
+contains the string which you have to encrypt.
+
+**Plaintext:** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+**Encrypted:** K R Y P T O S A B C D E F G H I J L M N Q U V W X Z
+
+**Example →**
+
+Encrypting the message: KNOWLEDGE IS POWER when, Keyword is KRYPTOS
+
+**Decoded Message →** DGHVETPST BM IHVTL
+
+Write a program to accept a Coded text in upper case and a Keyword. Using the above technique
+decrypt the text and display.
+Note: ***All the messages are encoded in uppercase. Whitespace, special characters, and
+numbers remains unchanged.***
+
+Test your program for the following inputs:
+
+**$Example 1→$**
+
+```java
+**INPUT:** ENTER KEYWORD: SECRET
+       ENTER TEXT TO BE DECODED: ZLJEFT DTOT
+**OUTPUT:** DECODED TEXT: ZOMBIE HERE
+```
+
+**$Example 2 →$**
+
+```java
+**INPUT:** ENTER KEYWORD: STAR WARS
+       ENTER TEXT TO BE DECODED: SPPSAG SP RSVJ
+**OUTPUT:** DECODED TEXT: ATTACK AT DAWN
+```
+
+**$Example 3→$**
+
+```java
+**INPUT:** ENTER KEYWORD: PLAYERS
+       ENTER TEXT TO BE DECODED: Haln de yokl
+**OUTPUT: INVALID INPUT**
+```
+
+### Algorithm
+
+1. Start
+2. Import `java.util.Scanner`.
+3. Define `KeywordCipher` class.
+4. Define `DuplicateRemover` method with `String keyword` parameter.
+5. Initialize `result` to an empty string.
+6. Loop through `keyword` characters.
+7. Append character to `result` if not already present.
+8. Return `result`.
+9. Define `CipherAdder` method with `String keyword` parameter.
+10. Call `DuplicateRemover` and store result in `Dup`.
+11. Initialize `Alpha` with "ABCDEFGHIJKLMNOPQRSTUVWXYZ".
+12. Initialize `cAlpha` to an empty string.
+13. Loop through `Dup` characters and append to `cAlpha` if in `Alpha`.
+14. Loop through `Alpha` characters and append to `cAlpha` if not in `cAlpha`.
+15. Return `cAlpha`.
+16. Define `decryptMessage` method with `String encoded` and `String keyword` parameters.
+17. Call `CipherAdder` and store result in `cAlpha`.
+18. Initialize `decoded` to an empty string.
+19. Loop through `encoded` characters.
+20. For each character, find its index in `cAlpha` and append corresponding 'A' + index character to `decoded`.
+21. End
+
+### Variable Description Table
+
+| Sr. No. | Variable Name | Data Type | Description |
+| --- | --- | --- | --- |
+| 1 | keyword | String | The keyword used to generate the cipher alphabet. |
+| 2 | result | String | The keyword with duplicate characters removed. |
+| 3 | Dup | String | The keyword after duplicates are removed, used in the cipher alphabet generation. |
+| 4 | Alpha | String | The string containing the standard English alphabet in uppercase. |
+| 5 | cAlpha | String | The custom cipher alphabet generated using the keyword. |
+| 6 | encoded | String | The encoded text that needs to be decoded. |
+| 7 | decoded | String | The decoded message after processing the encoded text using the cipher alphabet. |
+| 8 | c | char | A character from the encoded text being processed for decoding. |
+| 9 | cAlphaIndex | int | The index of the character from the encoded text in the custom cipher alphabet. |
+| 10 | scanner | Scanner | Scanner object to read input from the user. |
+| 11 | textToDecode | String | The text that needs to be decoded, input by the user. |
+
+### Program
+
+```java
+import java.util.Scanner;
+
+public class KeywordCipher {
+    public static String DuplicateRemover(String keyword) {
+        String result = "";
+        for (int i = 0; i < keyword.length(); i++) {
+            if (!result.contains(String.valueOf(keyword.charAt(i)))) {
+                result += String.valueOf(keyword.charAt(i));
             }
-            if (N < 1 || N > 100) {
-                System.out.println("INCORRECT VALUE OF 'N'");
-                return;
-            }
-    
-            int[] daysInMonths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-            String[] monthNames = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
-                    "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
-    
-            int month = 0;
-            int day = dayNumber;
-            for (int i = 0; i < 12; i++) {
-                if (day > daysInMonths[i]) {
-                    day -= daysInMonths[i];
-                } else {
-                    month = i;
-                    break;
-                }
-            }
-    
-            System.out.println("ENTERED DATE: " + monthNames[month] + " " + day + ", " + year);
-    
-            day += N;
-            while (day > daysInMonths[month]) {
-                day -= daysInMonths[month];
-                month++;
-                if (month == 12) {
-                    month = 0;
-                    year++;
-                }
-            }
-    
-            System.out.println(N + " DAYS LATER: " + monthNames[month] + " " + day + ", " + year);
         }
+        return result;
     }
-    
-    ```
-    
-    ### Terminal Output
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/518f4956-5f7b-466c-82ed-af9ac7de96eb/8805e12f-3028-48ed-b4b7-94c19ddc780e/Untitled.png)
-    
-    # Question 25: `ERRORED`
-    
-    Lucky numbers are a sequence of natural numbers that remain after removing second, third, fourth,
-    fifth and so on numbers respectively from a sequence of consecutive natural numbers.
-    
-    Consider the sequence of first 20 natural numbers :
-    
-    Removing every second number produces the sequence 1, 3, 5, 7, 9, 11, 13, 15, 17. 19
-    Next removing every third number prodaces the sequence 1, 3, 7, 9. 13, 15, 19
-    Next removing every fourth number produces the sequence : 1, 3, 7, 13, 15. 19
-    Further deleting every fifth number we get the sequence : 1, 3, 7, 13, 19
-    
-    Deletion of every sixth number is not possible and the five numbers that are lucky to escape deletion
-    remain indefinitely.
-    
-    Write a program to enter any positive natural number 'N" where (1 <- N <- 50) and generate lucky
-    numbers less than the given natural number.
-    Test your program with the following set of data
-    
-    **Example 1**
-    
-    **INPUT:** N=10
-    
-    **OUTPUT:** LUCKY NUMBERS LESS THAN 10 ARE: 1, 3, 7
-    
-    **Example 2**
-    
-    **INPUT:** N=25
-    
-    **OUTPUT:** LUCKY NUMBERS LESS THAN 25 ARE: 1, 3, 7, 13, 19
-    
-    **Example 3**
-    
-    **INPUT:** N=100
-    
-    **OUTPUT:** NUMBER NOT IN RANGE: INVALID ENTRY
-    
-- Sample Paper 3
-    
-    # Question 27:
-    
-    A **Vampire** number is a composite natural number with an even number of digits that can be factored into two natural numbers  each with half as many digits as the original number and not both with trailing zeros, where the two factors contain precisely all the digits of the original number, in any order of counting multiplicity.
-    
-    $Example →$ 1260 = 21*60 (Where, 21 and 60 contain precisely all the digits of the number)
-    
-    Thus, 1260 Is a Vampire number.
-    
-    Accept two positive integers m and n, where m is less than n and the values of both ‘m’ and ‘n’ must be greater than or equal to 1000 and less than or equal to 9999 as user input. Display all Vampire numbers that are in the range between m and n (both inclusive) and output them along with the frequency, in the format specified below:
-    
-    Test your program for the following data and some random data.
-    
-    $Example$ $→$
-    
-    ```java
-    **Input: m=1002
-           n=1640
-    Output**: THE VAMPIRE NUMBERS ARE:
-            1260 1395 1435 1530
-            FREQUENCY OF VAMPIRE NUMBER IS: 4
-    ```
-    
-    $Example 2→$
-    
-    ```java
-    **Input: m=1810
-           n=7800
-    Output**: THE VAMPIRE NUMBERS ARE:
-            1827 2187 6880
-            FREQUENCY OF VAMPIRE NUMBER IS: 3
-    ```
-    
-    $Example 3→$
-    
-    ```java
-    **Input: m=8105
-           n=9999
-    Output**: THE VAMPIRE NUMBERS ARE:
-            NIL
-            FREQUENCY OF VAMPIRE NUMBER IS: 0
-    ```
-    
-    $Example 4→$
-    
-    ```java
-    **Input: m=174
-           n=4500
-    Output**: INVALID INPUT
-    ```
-    
-    ### Algorithm
-    
-    1. Start
-    2. Import `java.util.Scanner`
-    3. Define `Vampire` class
-    4. Define `isVampire(int num)` method to check if `num` is a vampire number
-    5. Convert `num` to string `n` and get its length `l`
-    6. If `l` is odd, return false
-    7. Loop from `i = 10^(l/2-1)` to `10^(l/2)`
-    8. Check if `num` is divisible by `i`, calculate quotient `q = num / i`
-    9. If `q` has correct number of digits, check `EqualDigitChecker(n, i, q)`
-    10. Define `EqualDigitChecker(String o, int p1, int p2)` method
-    11. Concatenate `p1` and `p2` into string `com`
-    12. If length of `com` matches `o`, call `areAnag(o, com)`; return its result
-    13. Define `areAnag(String str1, String str2)` method
-    14. If lengths of `str1` and `str2` match, initialize `count` array of size 10
-    15. Loop through `str1` and `str2`, updating `count` based on digit frequencies
-    16. If all elements in `count` are zero, return true; else, return false
-    17. Define `main` method
-    18. Prompt user for `m` and `n`, read using `Scanner`
-    19. Initialize `vampireNumbers` array and `count`
-    20. Loop from `m` to `n`, check each number with `isVampire`; if true, store in `vampireNumbers` and increment `count`
-    21. Print "THE VAMPIRE NUMBERS ARE:" followed by vampire numbers or "NIL" if `count` is 0
-    22. Print "FREQUENCY OF VAMPIRE NUMBER IS: " followed by `count`
-    23. End
-    
-    ### Variable Description Table
-    
-    | Sr. No. | Variable Name | Data Type | Description |
-    | --- | --- | --- | --- |
-    | 1 | scanner | Scanner | Used to take input from the user. |
-    | 2 | dayNumber | int | Stores the day number entered by the user (between 1 and 366). |
-    | 3 | year | int | Stores the year entered by the user (format yyyy). |
-    | 4 | N | int | Stores the value of N entered by the user (number of days to add). |
-    | 5 | daysInMonths | int[] | Array containing the number of days in each month. |
-    | 6 | monthNames | String[] | Array containing the names of the months. |
-    | 7 | month | int | Stores the index of the month derived from the day number. |
-    | 8 | day | int | Stores the day of the month derived from the day number and used to calculate the future date. |
-    
-    ### Program
-    
-    ```java
-    import java.util.Scanner;
-    
-    public class Vampire {
-        public static boolean isVampire(int num) {
-            String n = Integer.toString(num);
-            int l = n.length();
-            if (l % 2 != 0) {
-                return false;
+    public static String CipherAdder(String keyword) {
+        String Dup = DuplicateRemover(keyword);
+        String Alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String cAlpha = "";
+        for (int i = 0; i < Dup.length(); i++) {
+            if (Alpha.indexOf(Dup.charAt(i)) != -1) {
+                cAlpha += Dup.charAt(i);
+            }
+        }
+        for (int i = 0; i < Alpha.length(); i++) {
+            if (cAlpha.indexOf(Alpha.charAt(i)) == -1) {
+                cAlpha += Alpha.charAt(i);
+            }
+        }
+        return cAlpha;
+    }
+    public static String decryptMessage(String encoded, String keyword) {
+        String cAlpha = CipherAdder(keyword);
+        String decoded = "";
+        for (int i = 0; i < encoded.length(); i++) {
+            char c = encoded.charAt(i);
+            if (c >= 'A' && c <= 'Z') {
+                int cAlphaIndex = cAlpha.indexOf(c);
+                decoded += (char) ('A' + cAlphaIndex);
             } else {
-                for (int i = (int)Math.pow(10, l / 2 - 1); i < Math.pow(10, l / 2); i++) {
-                    if (num % i == 0) {
-                        int q = num / i;
-                        if (q >= Math.pow(10, l / 2 - 1)) {
-                            if (EqualDigitChecker(n, i, q)) {
-                                return true;
-                            } else {
-                                continue;
-                            }
+                decoded += c;
+            }
+        }
+        return decoded;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("ENTER KEYWORD: ");
+        String keyword = scanner.nextLine().toUpperCase().replaceAll("\\s+", "");
+        System.out.print("ENTER TEXT TO BE DECODED: ");
+        String textToDecode = scanner.nextLine().toUpperCase();        
+        String decoded = decryptMessage(textToDecode, keyword);
+        System.out.println("DECODED TEXT: " + decoded);
+    }
+}
+```
+
+### Terminal output
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/518f4956-5f7b-466c-82ed-af9ac7de96eb/c20c5fda-9970-4e0a-94f8-59debc66d7e2/Untitled.png)
+
+---
+
+# Question 24:
+
+Write a program in JAVA to accept day number (between I and 366) and year (yyyy) from the
+user and display the corresponding date. Also aocept 'N' from the user where (1 <- N <= 100) to
+compute and display the future date 'N' days after the given date. Display error message if the
+value of the day number or "N' are not within the limit. Day number is calculated taking 1 January
+of the given year as 1.
+
+Test your program with given set of data and some random data
+
+**Example 1**
+
+**INPUT:** DAY NUMBER: 50
+
+              YEAR: 2023
+
+               N: 25
+
+**OUTPUT:** ENTERED DATE: FEBRUARY 19, 2023
+
+                  25 DAYS LATER: MARCH 16, 2023
+
+**Example 2**
+
+**INPUT:** DAY NUMBER: 321
+
+              YEAR: 2023
+
+               N: 77
+
+**OUTPUT:** ENTERED DATE: NOVEMBER17, 2023
+
+                  77 DAYS LATER: FEBRUARY 2, 2024
+
+**Example 3**
+
+**INPUT:** DAY NUMBER: 400
+
+              YEAR: 2023
+
+               N: 125
+
+**OUTPUT:** INCORRECT DAY NUMBER
+                   INCORRECT VALUE OF ‘N’
+
+### Algorithm
+
+1. Start.
+2. Import `java.util.Scanner`.
+3. Define `FutureDate` class with `main` method.
+4. Create `Scanner` object to read input.
+5. Read and store day number (1-366).
+6. Read and store year (yyyy).
+7. Read and store N (1-100).
+8. Validate day number (1-366).
+9. If invalid, print "INCORRECT DAY NUMBER" and exit.
+10. Validate N (1-100).
+11. If invalid, print "INCORRECT VALUE OF 'N'" and exit.
+12. Define arrays `daysInMonths` and `monthNames`.
+13. Initialize `month` and `day` to 0.
+14. Iterate to find month for entered day.
+15. Calculate remaining day in month.
+16. Print entered date.
+17. Add N days to entered day.
+18. Handle month and year change if necessary.
+19. Print date N days later.
+20. End.
+
+### Variable Description Table
+
+| Sr. No. | Variable Name | Data Type | Description |
+| --- | --- | --- | --- |
+| 1 | scanner | Scanner | Used to take input from the user. |
+| 2 | dayNumber | int | Stores the day number entered by the user (between 1 and 366). |
+| 3 | year | int | Stores the year entered by the user (format yyyy). |
+| 4 | N | int | Stores the value of N entered by the user (number of days to add). |
+| 5 | daysInMonths | int[] | Array containing the number of days in each month. |
+| 6 | monthNames | String[] | Array containing the names of the months. |
+| 7 | month | int | Stores the index of the month derived from the day number. |
+| 8 | day | int | Stores the day of the month derived from the day number and used to calculate the future date. |
+
+### Program
+
+```java
+import java.util.Scanner;
+
+public class FutureDate {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter day number (between 1 and 366): ");
+        int dayNumber = scanner.nextInt();
+
+        System.out.print("Enter year (yyyy): ");
+        int year = scanner.nextInt();
+
+        System.out.print("Enter value of N (1 <= N <= 100): ");
+        int N = scanner.nextInt();
+
+        if (dayNumber < 1 || dayNumber > 366) {
+            System.out.println("INCORRECT DAY NUMBER");
+            return;
+        }
+        if (N < 1 || N > 100) {
+            System.out.println("INCORRECT VALUE OF 'N'");
+            return;
+        }
+
+        int[] daysInMonths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        String[] monthNames = {"JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
+                "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"};
+
+        int month = 0;
+        int day = dayNumber;
+        for (int i = 0; i < 12; i++) {
+            if (day > daysInMonths[i]) {
+                day -= daysInMonths[i];
+            } else {
+                month = i;
+                break;
+            }
+        }
+
+        System.out.println("ENTERED DATE: " + monthNames[month] + " " + day + ", " + year);
+
+        day += N;
+        while (day > daysInMonths[month]) {
+            day -= daysInMonths[month];
+            month++;
+            if (month == 12) {
+                month = 0;
+                year++;
+            }
+        }
+
+        System.out.println(N + " DAYS LATER: " + monthNames[month] + " " + day + ", " + year);
+    }
+}
+
+```
+
+### Terminal Output
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/518f4956-5f7b-466c-82ed-af9ac7de96eb/8805e12f-3028-48ed-b4b7-94c19ddc780e/Untitled.png)
+
+---
+
+# Question 25:
+
+Lucky numbers are a sequence of natural numbers that remain after removing second, third, fourth,
+fifth and so on numbers respectively from a sequence of consecutive natural numbers.
+
+Consider the sequence of first 20 natural numbers :
+
+Removing every second number produces the sequence 1, 3, 5, 7, 9, 11, 13, 15, 17. 19
+Next removing every third number prodaces the sequence 1, 3, 7, 9. 13, 15, 19
+Next removing every fourth number produces the sequence : 1, 3, 7, 13, 15. 19
+Further deleting every fifth number we get the sequence : 1, 3, 7, 13, 19
+
+Deletion of every sixth number is not possible and the five numbers that are lucky to escape deletion
+remain indefinitely.
+
+Write a program to enter any positive natural number 'N" where (1 <- N <- 50) and generate lucky
+numbers less than the given natural number.
+Test your program with the following set of data
+
+**Example 1**
+
+**INPUT:** N=10
+
+**OUTPUT:** LUCKY NUMBERS LESS THAN 10 ARE: 1, 3, 7
+
+**Example 2**
+
+**INPUT:** N=25
+
+**OUTPUT:** LUCKY NUMBERS LESS THAN 25 ARE: 1, 3, 7, 13, 19
+
+**Example 3**
+
+**INPUT:** N=100
+
+**OUTPUT:** NUMBER NOT IN RANGE: INVALID ENTRY
+
+### Algorithm
+
+1. Start
+2. Import `java.util.Scanner`.
+3. Define `LuckyNumbers` class.
+4. Define `remove` method with `int[] arr` and `int step` parameters.
+5. Return `arr` if `step` is greater than `arr.length`.
+6. Initialize index `j` to 0.
+7. Create new array `newArr` with reduced length.
+8. Loop through `arr` with index `i`.
+9. Copy elements to `newArr` if not at `step` position.
+10. Return `newArr`.
+11. Define `Calculator` method with `int N` parameter.
+12. Create `int[] numbers` from 1 to `N-1`.
+13. Loop from 2 to `N`.
+14. Call `remove` method to update `numbers`.
+15. Print "LUCKY NUMBERS LESS THAN `N` ARE: ".
+16. Loop through `numbers` to print each element.
+17. Define `main` method.
+18. Create `Scanner` object `scanner`.
+19. Check if `N` is out of range and print error message or call `Calculator`.
+20. End
+
+### Variable Description Table
+
+| Sr. No. | Variable Name | Data Type | Description |
+| --- | --- | --- | --- |
+| 1 | arr | int[] | Array of numbers from which elements are removed in the remove method. |
+| 2 | step | int | Step value used to determine which elements to remove from the array. |
+| 3 | j | int | Index for the new array during the removal process. |
+| 4 | newArr | int[] | Array that stores the remaining elements after removal. |
+| 5 | N | int | Upper limit for the range of numbers to determine lucky numbers. |
+| 6 | numbers | int[] | Array of numbers from 1 to N-1. |
+| 7 | i | int | Loop counter used in the Calculator method for the sieve process. |
+| 8 | number | int | Elements of the numbers array, used to print the final list of lucky numbers. |
+| 9 | scanner | Scanner | Used to take input from the user. |
+
+### Program
+
+```java
+import java.util.Scanner;
+
+public class LuckyNumbers {
+    public static int[] remove(int[] arr, int step) {
+        if (step > arr.length) {
+            return arr; 
+        }
+        int j = 0;
+        int[] newArr = new int[arr.length - arr.length / step];
+                for (int i = 0; i < arr.length; i++) {
+            if ((i + 1) % step != 0) {
+                newArr[j++] = arr[i];
+            }
+        }
+        return newArr;
+    }
+    public static void Calculator(int N) {
+        int[] numbers = new int[N - 1];
+                for (int i = 0; i < N - 1; i++) {
+            numbers[i] = i + 1;
+        }
+                for (int i = 2; i <= N; i++) {
+            numbers = remove(numbers, i);
+        }
+        System.out.print("LUCKY NUMBERS LESS THAN " + N + " ARE: ");
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+        System.out.print("N=");
+        int N = scanner.nextInt();
+        if (N < 1 || N > 50) {
+            System.out.println("NUMBER NOT IN RANGE: INVALID ENTRY");
+            return;
+        }
+        Calculator(N);
+    }
+}
+```
+
+### Terminal Output
+
+# Question 27:
+
+A **Vampire** number is a composite natural number with an even number of digits that can be factored into two natural numbers  each with half as many digits as the original number and not both with trailing zeros, where the two factors contain precisely all the digits of the original number, in any order of counting multiplicity.
+
+$Example →$ 1260 = 21*60 (Where, 21 and 60 contain precisely all the digits of the number)
+
+Thus, 1260 Is a Vampire number.
+
+Accept two positive integers m and n, where m is less than n and the values of both ‘m’ and ‘n’ must be greater than or equal to 1000 and less than or equal to 9999 as user input. Display all Vampire numbers that are in the range between m and n (both inclusive) and output them along with the frequency, in the format specified below:
+
+Test your program for the following data and some random data.
+
+$Example$ $→$
+
+```java
+**Input: m=1002
+       n=1640
+Output**: THE VAMPIRE NUMBERS ARE:
+        1260 1395 1435 1530
+        FREQUENCY OF VAMPIRE NUMBER IS: 4
+```
+
+$Example 2→$
+
+```java
+**Input: m=1810
+       n=7800
+Output**: THE VAMPIRE NUMBERS ARE:
+        1827 2187 6880
+        FREQUENCY OF VAMPIRE NUMBER IS: 3
+```
+
+$Example 3→$
+
+```java
+**Input: m=8105
+       n=9999
+Output**: THE VAMPIRE NUMBERS ARE:
+        NIL
+        FREQUENCY OF VAMPIRE NUMBER IS: 0
+```
+
+$Example 4→$
+
+```java
+**Input: m=174
+       n=4500
+Output**: INVALID INPUT
+```
+
+### Algorithm
+
+1. Start
+2. Import `java.util.Scanner`
+3. Define `Vampire` class
+4. Define `isVampire(int num)` method to check if `num` is a vampire number
+5. Convert `num` to string `n` and get its length `l`
+6. If `l` is odd, return false
+7. Loop from `i = 10^(l/2-1)` to `10^(l/2)`
+8. Check if `num` is divisible by `i`, calculate quotient `q = num / i`
+9. If `q` has correct number of digits, check `EqualDigitChecker(n, i, q)`
+10. Define `EqualDigitChecker(String o, int p1, int p2)` method
+11. Concatenate `p1` and `p2` into string `com`
+12. If length of `com` matches `o`, call `areAnag(o, com)`; return its result
+13. Define `areAnag(String str1, String str2)` method
+14. If lengths of `str1` and `str2` match, initialize `count` array of size 10
+15. Loop through `str1` and `str2`, updating `count` based on digit frequencies
+16. If all elements in `count` are zero, return true; else, return false
+17. Define `main` method
+18. Prompt user for `m` and `n`, read using `Scanner`
+19. Initialize `vampireNumbers` array and `count`
+20. Loop from `m` to `n`, check each number with `isVampire`; if true, store in `vampireNumbers` and increment `count`
+21. Print "THE VAMPIRE NUMBERS ARE:" followed by vampire numbers or "NIL" if `count` is 0
+22. Print "FREQUENCY OF VAMPIRE NUMBER IS: " followed by `count`
+23. End
+
+### Variable Description Table
+
+| Sr. No. | Variable Name | Data Type | Description |
+| --- | --- | --- | --- |
+| 1 | scanner | Scanner | Used to take input from the user. |
+| 2 | dayNumber | int | Stores the day number entered by the user (between 1 and 366). |
+| 3 | year | int | Stores the year entered by the user (format yyyy). |
+| 4 | N | int | Stores the value of N entered by the user (number of days to add). |
+| 5 | daysInMonths | int[] | Array containing the number of days in each month. |
+| 6 | monthNames | String[] | Array containing the names of the months. |
+| 7 | month | int | Stores the index of the month derived from the day number. |
+| 8 | day | int | Stores the day of the month derived from the day number and used to calculate the future date. |
+
+### Program
+
+```java
+import java.util.Scanner;
+
+public class Vampire {
+    public static boolean isVampire(int num) {
+        String n = Integer.toString(num);
+        int l = n.length();
+        if (l % 2 != 0) {
+            return false;
+        } else {
+            for (int i = (int)Math.pow(10, l / 2 - 1); i < Math.pow(10, l / 2); i++) {
+                if (num % i == 0) {
+                    int q = num / i;
+                    if (q >= Math.pow(10, l / 2 - 1)) {
+                        if (EqualDigitChecker(n, i, q)) {
+                            return true;
+                        } else {
+                            continue;
                         }
                     }
                 }
-                return false;
             }
-        }
-        public static boolean EqualDigitChecker(String o, int p1, int p2) {
-            String com = Integer.toString(p1) + Integer.toString(p2);  
-            if (com.length() != o.length()) {
-                return false;
-            } else {
-                return areAnag(o, com);
-            }
-        }
-        public static boolean areAnag(String str1, String str2) {
-            if (str1.length() != str2.length()) {
-                return false;
-            } else {
-                int[] count = new int[10];
-                
-                for (int i = 0; i < str1.length(); i++) {
-                    count[str1.charAt(i) - '0']++;
-                    count[str2.charAt(i) - '0']--;
-                }
-                for (int i = 0; i < 10; i++) {
-                    if (count[i] != 0) {
-                        return false;
-                    }
-                }
-                return true;
-            }
-        }
-        public static void main(String[] args) {
-            Scanner sc = new Scanner(System.in);
-            
-            System.out.println("Enter the value of m: ");
-            int m = sc.nextInt();
-            System.out.println("Enter the value of n: ");
-            int n = sc.nextInt();
-            
-            if (m < 1000 || m > 9999 || n < 1000 || n > 9999 || m >= n) {
-                System.out.println("INVALID INPUT");
-                return;
-            } else {
-                int[] vampireNumbers = new int[n - m + 1];
-                int count = 0;
-                for (int i = m; i <= n; i++) {
-                    if (isVampire(i)) {
-                        vampireNumbers[count++] = i;
-                    }
-                }
-                System.out.println("THE VAMPIRE NUMBERS ARE:");
-                if (count == 0) {
-                    System.out.println("NIL");
-                } else {
-                    for (int i = 0; i < count; i++) {
-                        System.out.print(vampireNumbers[i] + " ");
-                    }
-                    System.out.println();
-                }
-                System.out.println("FREQUENCY OF VAMPIRE NUMBER IS: " + count);
-            }
+            return false;
         }
     }
-    ```
-    
-    ### Terminal Output
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/518f4956-5f7b-466c-82ed-af9ac7de96eb/e0a6c71b-cc06-4418-a35a-f95437263df7/Untitled.png)
-    
-    # Question 28:
-    
-    Write a Program to accept a sentence which may be terminated by either “_”, ‘?’ or ‘!’ only. The words may be separated by a single blank spaces and are in UPPER CASE.
-    
-    Perform the following tasks:
-    
-    1. Count number of vowels and consonants present in each word.
-    2. Generate the output of the frequency in form of a bar graph, where V denotes vowels and C consonants as shown below:
-    
-    Test your program for the following data and some random data:
-    
-    $Example→$
-    
-    ```java
-    **Input:** HOW ARE YOU?
-    **OUTPUT: WORD    COUNT**
-    
-            HOW      V
-                     CC
-                     
-            ARE      VV
-                     C
-                     
-            YOU      VV
-                     C
-    ```
-    
-    $Example 2→$
-    
-    ```java
-    **INPUT:** GOOD DAY?
-    **OUTPUT: WORD      COUNT**
-    
-    	      GOOD      VV
-    	                CC
-    	                
-    	      DAY       V
-    	                CC
-    ```
-    
-    $Example 3→$
-    
-    ```java
-    **INPUT:** LONG LIVE THE KING#
-    **OUTPUT:** INCORRECT TERMINATING CHARACTER INVALID INPUT
-    ```
-    
-    ### Algorithm
-    
-    1. Start.
-    2. Import `java.util.Scanner`.
-    3. Define `WordAnalyzer` class with `main` method.
-    4. Create `Scanner` object to read input.
-    5. Prompt the user to enter a sentence terminated by '_', '?', or '!'.
-    6. Read and store the input sentence.
-    7. Trim leading and trailing whitespaces from the input.
-    8. Check if the input ends with '_', '?', or '!'.
-    9. If true, split the input sentence into words using whitespaces.
-    10. Print column headers "WORD" and "COUNT".
-    11. Iterate over each word in the input sentence.
-    12. Initialize counters for vowels and consonants for the current word.
-    13. Iterate over each character in the word.
-    14. Check if the character is a vowel using the `isVowel` method.
-    15. If true, increment the vowel counter.
-    16. If the character is a letter and not a vowel, increment the consonant counter.
-    17. Print the current word followed by 'V' for each vowel and 'C' for each consonant.
-    18. Print a new line after printing the counts for each word.
-    19. If the terminating character is incorrect, print "INCORRECT TERMINATING CHARACTER. INVALID INPUT".
-    20. End.
-    
-    ### Variable Description Table
-    
-    | Sr. No. | Variable Name | Data Type | Description |
-    | --- | --- | --- | --- |
-    | 1 | scanner | Scanner | Used to take input from the user. |
-    | 2 | input | String | Stores the input sentence entered by the user. |
-    | 3 | words | String[] | Array of words extracted from the input sentence. |
-    | 4 | word | String | Used to iterate through each word in the words array. |
-    | 5 | vowels | int | Counter for the number of vowel characters in a word. |
-    | 6 | consonants | int | Counter for the number of consonant characters in a word. |
-    | 7 | ch | char | Used to iterate through each character in a word to check if it is a vowel or consonant. |
-    
-    ### Program
-    
-    ```java
-    import java.util.Scanner;
-    
-    public class WordAnalyzer {
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter a sentence (terminated by '_', '?' or '!'): ");
-            String input = scanner.nextLine().trim();
-    
-            if (input.endsWith("_") || input.endsWith("?") || input.endsWith("!")) {
-                String[] words = input.split("\\s+");
-                System.out.println("WORD\tCOUNT\n");
-    
-                for (String word : words) {
-                    int vowels = 0;
-                    int consonants = 0;
-    
-                    for (char ch : word.toCharArray()) {
-                        if (isVowel(ch))
-                            vowels++;
-                        else if (Character.isLetter(ch))
-                            consonants++;
-                    }
-    
-                    System.out.print(word + "\t");
-    
-                    for (int i = 0; i < vowels; i++) {
-                        System.out.print("V");
-                    }
-                    for (int i = 0; i < consonants; i++) {
-                        System.out.print("C");
-                    }
-    
-                    System.out.println("\n");
-                }
-            } else {
-                System.out.println("INCORRECT TERMINATING CHARACTER. INVALID INPUT");
-            }
-        }
-    
-        private static boolean isVowel(char ch) {
-            ch = Character.toUpperCase(ch);
-            return ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U';
+    public static boolean EqualDigitChecker(String o, int p1, int p2) {
+        String com = Integer.toString(p1) + Integer.toString(p2);  
+        if (com.length() != o.length()) {
+            return false;
+        } else {
+            return areAnag(o, com);
         }
     }
-    ```
-    
-    ### Terminal Output
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/518f4956-5f7b-466c-82ed-af9ac7de96eb/90865331-e924-468a-9d30-1215bb822de4/Untitled.png)
-    
-    ---
+    public static boolean areAnag(String str1, String str2) {
+        if (str1.length() != str2.length()) {
+            return false;
+        } else {
+            int[] count = new int[10];
+            
+            for (int i = 0; i < str1.length(); i++) {
+                count[str1.charAt(i) - '0']++;
+                count[str2.charAt(i) - '0']--;
+            }
+            for (int i = 0; i < 10; i++) {
+                if (count[i] != 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter the value of m: ");
+        int m = sc.nextInt();
+        System.out.println("Enter the value of n: ");
+        int n = sc.nextInt();
+        
+        if (m < 1000 || m > 9999 || n < 1000 || n > 9999 || m >= n) {
+            System.out.println("INVALID INPUT");
+            return;
+        } else {
+            int[] vampireNumbers = new int[n - m + 1];
+            int count = 0;
+            for (int i = m; i <= n; i++) {
+                if (isVampire(i)) {
+                    vampireNumbers[count++] = i;
+                }
+            }
+            System.out.println("THE VAMPIRE NUMBERS ARE:");
+            if (count == 0) {
+                System.out.println("NIL");
+            } else {
+                for (int i = 0; i < count; i++) {
+                    System.out.print(vampireNumbers[i] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println("FREQUENCY OF VAMPIRE NUMBER IS: " + count);
+        }
+    }
+}
+```
+
+### Terminal Output
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/518f4956-5f7b-466c-82ed-af9ac7de96eb/e0a6c71b-cc06-4418-a35a-f95437263df7/Untitled.png)
+
+# Question 28:
+
+Write a Program to accept a sentence which may be terminated by either “_”, ‘?’ or ‘!’ only. The words may be separated by a single blank spaces and are in UPPER CASE.
+
+Perform the following tasks:
+
+1. Count number of vowels and consonants present in each word.
+2. Generate the output of the frequency in form of a bar graph, where V denotes vowels and C consonants as shown below:
+
+Test your program for the following data and some random data:
+
+$Example→$
+
+```java
+**Input:** HOW ARE YOU?
+**OUTPUT: WORD    COUNT**
+
+        HOW      V
+                 CC
+                 
+        ARE      VV
+                 C
+                 
+        YOU      VV
+                 C
+```
+
+$Example 2→$
+
+```java
+**INPUT:** GOOD DAY?
+**OUTPUT: WORD      COUNT**
+
+	      GOOD      VV
+	                CC
+	                
+	      DAY       V
+	                CC
+```
+
+$Example 3→$
+
+```java
+**INPUT:** LONG LIVE THE KING#
+**OUTPUT:** INCORRECT TERMINATING CHARACTER INVALID INPUT
+```
+
+### Algorithm
+
+1. Start.
+2. Import `java.util.Scanner`.
+3. Define `WordAnalyzer` class with `main` method.
+4. Create `Scanner` object to read input.
+5. Prompt the user to enter a sentence terminated by '_', '?', or '!'.
+6. Read and store the input sentence.
+7. Trim leading and trailing whitespaces from the input.
+8. Check if the input ends with '_', '?', or '!'.
+9. If true, split the input sentence into words using whitespaces.
+10. Print column headers "WORD" and "COUNT".
+11. Iterate over each word in the input sentence.
+12. Initialize counters for vowels and consonants for the current word.
+13. Iterate over each character in the word.
+14. Check if the character is a vowel using the `isVowel` method.
+15. If true, increment the vowel counter.
+16. If the character is a letter and not a vowel, increment the consonant counter.
+17. Print the current word followed by 'V' for each vowel and 'C' for each consonant.
+18. Print a new line after printing the counts for each word.
+19. If the terminating character is incorrect, print "INCORRECT TERMINATING CHARACTER. INVALID INPUT".
+20. End.
+
+### Variable Description Table
+
+| Sr. No. | Variable Name | Data Type | Description |
+| --- | --- | --- | --- |
+| 1 | scanner | Scanner | Used to take input from the user. |
+| 2 | input | String | Stores the input sentence entered by the user. |
+| 3 | words | String[] | Array of words extracted from the input sentence. |
+| 4 | word | String | Used to iterate through each word in the words array. |
+| 5 | vowels | int | Counter for the number of vowel characters in a word. |
+| 6 | consonants | int | Counter for the number of consonant characters in a word. |
+| 7 | ch | char | Used to iterate through each character in a word to check if it is a vowel or consonant. |
+
+### Program
+
+```java
+import java.util.Scanner;
+
+public class WordAnalyzer {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a sentence (terminated by '_', '?' or '!'): ");
+        String input = scanner.nextLine().trim();
+
+        if (input.endsWith("_") || input.endsWith("?") || input.endsWith("!")) {
+            String[] words = input.split("\\s+");
+            System.out.println("WORD\tCOUNT\n");
+
+            for (String word : words) {
+                int vowels = 0;
+                int consonants = 0;
+
+                for (char ch : word.toCharArray()) {
+                    if (isVowel(ch))
+                        vowels++;
+                    else if (Character.isLetter(ch))
+                        consonants++;
+                }
+
+                System.out.print(word + "\t");
+
+                for (int i = 0; i < vowels; i++) {
+                    System.out.print("V");
+                }
+                for (int i = 0; i < consonants; i++) {
+                    System.out.print("C");
+                }
+
+                System.out.println("\n");
+            }
+        } else {
+            System.out.println("INCORRECT TERMINATING CHARACTER. INVALID INPUT");
+        }
+    }
+
+    private static boolean isVowel(char ch) {
+        ch = Character.toUpperCase(ch);
+        return ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U';
+    }
+}
+```
+
+### Terminal Output
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/518f4956-5f7b-466c-82ed-af9ac7de96eb/90865331-e924-468a-9d30-1215bb822de4/Untitled.png)
+
+---
