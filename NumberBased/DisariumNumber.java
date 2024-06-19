@@ -34,6 +34,8 @@ OUTPUT: Not a Disarium Number
 */
 package NumberBased;
 
+import java.util.Scanner;
+
 public class DisariumNumber
 {
       static boolean check(int n)
@@ -52,7 +54,9 @@ public class DisariumNumber
     }
       public static void main(String[] args)
     {
-        int n = 89;
+        Scanner scanner = new Scanner (System.in);
+        
+        int n = scanner.nextInt();
         
         System.out.println(check(n) ? "Disarium Number" : "Not a Disarium Number");
     }
