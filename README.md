@@ -2554,7 +2554,7 @@ public class Matrix {
         displayMatrix(matrix);
 
         int[][] rotatedMatrix = rotateMatrixClockwise(matrix);
-        System.out.println("Rotated matrix (90 degrees clockwise):");
+        System.out.println("Rotated matrix (270 Degree Anti-clockwise):");
         displayMatrix(rotatedMatrix);
 
         int oddSum = calculateOddSum(matrix);
