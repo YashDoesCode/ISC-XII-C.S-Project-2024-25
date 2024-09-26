@@ -1,5 +1,6 @@
 # ISCXII-CSProject2024-25
-![image](https://github.com/YashDoesCode/XII-C.S-Project-2024-25/assets/169293586/530d8252-e827-4019-b2e7-2aaacb406fa6)
+![image](https://github.com/user-attachments/assets/4a67c79d-3a14-49d2-8b87-c76f35bee2ec)
+
 
 
 Acknowledgment
