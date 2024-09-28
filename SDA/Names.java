@@ -1,7 +1,29 @@
 package SDA;
 
-/*
- * Write a program that inputs the names of people into 2 different arrays, 'a' and 'b'. Array 'a' has N names while array 'b' has M names, with no duplicates in either of them. Merge the aarray 'a' and 'b' such that the resultant array is sorted alphabeticaally. Display all 3 arrays sorted alphabetically.
+/**
+Question 2: 
+Write a program that inputs the names of people into 2 different arrays, 'a' and 'b'. Array 'a' has N names while array 'b' has M names, with no duplicates in either of them. Merge the array 'a' and 'b' such that the resultant array is sorted alphabetically. Display all 3 arrays sorted alphabetically.
+Algorithm
+1.	Start.
+2.	Declare a class Names.
+3.	Declare string arrays a[], b[] and integers n, m.
+4.	Create a constructor Names(int mm, int nn) to initialize n and m.
+5.	Initialize arrays a and b with sizes n and m.
+6.	Create a method input() for user input.
+7.	Create a Scanner object as for input.
+8.	Print "Enter names for array 'A'".
+9.	Loop i from 0 to n-1 to read names into array a[].
+10.	Print "Enter names for array 'B'".
+11.	Loop i from 0 to m-1 to read names into array b[].
+12.	Close the Scanner object.
+13.	Create a method merge(String arr1[], String arr2[]).
+14.	Initialize a new array c[] of size m+n.
+15.	Use index variables k, i, and j to merge arr1 and arr2 into c[].
+16.	Create a method sort(String arr[]) to sort the merged array.
+17.	Implement bubble sort to sort the elements of array arr[].
+18.	Create methods display1(), display2(), and display3(String c[]) to print arrays.
+19.	Call input(), merge(), sort(), and display methods.
+20.	End.
  */
 import java.util.*;
 public class Names {

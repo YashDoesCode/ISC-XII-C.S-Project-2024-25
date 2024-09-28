@@ -1,5 +1,7 @@
 package SamplePaper3;
+
 /**
+ Question 26:
 A Vampire number is a composite natural number with an even number of digits that can be factored into two natural numbers  each with half as many digits as the original number and not both with trailing zeros, where the two factors contain precisely all the digits of the original number, in any order of counting multiplicity.
 Example ? 1260 = 21*60 (Where, 21 and 60 contain precisely all the digits of the number)
 Thus, 1260 Is a Vampire number.

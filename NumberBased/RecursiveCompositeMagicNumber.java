@@ -1,5 +1,6 @@
 package NumberBased;
 /**
+ Question 24:
 A composite Magic number is a positive integer which is composite as well as a Magic Number.
 Write a Java program to accept two positive integers ‘m’ and ‘n’, where m is less than n. Display the number of composite magic integers that are in the range between m and n (both inclusive) and output them along with frequency, in the format specified below.
 

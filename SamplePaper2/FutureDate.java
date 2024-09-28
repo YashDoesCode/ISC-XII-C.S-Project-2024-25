@@ -1,5 +1,6 @@
 package SamplePaper2;
 /**
+ Question 30:
 Write a program in JAVA to accept day number (between I and 366) and year (yyyy) from the
 user and display the corresponding date. Also aocept 'N' from the user where (1 <- N <= 100) to
 compute and display the future date 'N' days after the given date. Display error message if the

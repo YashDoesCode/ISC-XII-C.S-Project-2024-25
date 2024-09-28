@@ -1,61 +1,52 @@
 package SamplePaper3;
 /**
-Write a Program to accept a sentence which may be terminated by either “_”, ‘?’ or ‘!’ only. The words may be separated by a single blank spaces and are in UPPER CASE.
+Question 18:
+Write a Program to accept a sentence which may be terminated by either “_”, ‘?’ or ‘!’ only. The words may be separated by a single blank space and are in UPPER CASE.
 Perform the following tasks:
-
-1. Count number of vowels and consonants present in each word.
-2. Generate the output of the frequency in form of a bar graph, where V denotes vowels and C consonants as shown below:
-
+1.	Count the number of vowels and consonants present in each word.
+2.	Generate the output of the frequency in form of a bar graph, where V denotes vowels and Consonants as shown below:
 Test your program for the following data and some random data:
+Example?
+INPUT: HOW ARE YOU?
+OUTPUT: WORD    COUNT
 
-Examples
-
-Input: HOW ARE YOU?
-OUTPUT: WORD    COUNT**
-
-        HOW      V
-                 CC
+        HOW      VCC
                  
-        ARE      VV
-                 C
+        ARE      VVC
                  
-        YOU      VV
-                 C
-----------------------------------------------------
+        YOU      VVC
+Example 2?
 INPUT: GOOD DAY?
-OUTPUT: WORD      COUNT**
+OUTPUT: WORD      COUNT
 
-	      GOOD      VV
-	                CC
+	      GOOD      VVCC
 	                
-	      DAY       V
-	                CC
-----------------------------------------------------
-INPUT: LONG LIVE THE KING#
+	      DAY       VCC
+Example 3?
+INPUT: LONG LIVE THE KING
 OUTPUT: INCORRECT TERMINATING CHARACTER INVALID INPUT
-----------------------------------------------------
-Algorithm
 
-1. Start.
-2. Import `java.util.Scanner`.
-3. Define `WordAnalyzer` class with `main` method.
-4. Create `Scanner` object to read input.
-5. Prompt the user to enter a sentence terminated by '_', '?', or '!'.
-6. Read and store the input sentence.
-7. Trim leading and trailing whitespaces from the input.
-8. Check if the input ends with '_', '?', or '!'.
-9. If true, split the input sentence into words using whitespaces.
-10. Print column headers "WORD" and "COUNT".
-11. Iterate over each word in the input sentence.
-12. Initialize counters for vowels and consonants for the current word.
-13. Iterate over each character in the word.
-14. Check if the character is a vowel using the `isVowel` method.
-15. If true, increment the vowel counter.
-16. If the character is a letter and not a vowel, increment the consonant counter.
-17. Print the current word followed by 'V' for each vowel and 'C' for each consonant.
-18. Print a new line after printing the counts for each word.
-19. If the terminating character is incorrect, print "INCORRECT TERMINATING CHARACTER. INVALID INPUT".
-20. End.
+Algorithm
+1.	Start.
+2.	Import java.util.Scanner.
+3.	Define WordAnalyzer class with main method.
+4.	Create a Scanner object to read input.
+5.	Prompt the user to enter a sentence terminated by '_', '?', or '!'.
+6.	Read and store the input sentence.
+7.	Trim leading and trailing whitespaces from the input.
+8.	Check if the input ends with '_', '?', or '!'.
+9.	If true, split the input sentence into words using whitespaces.
+10.	Print column headers "WORD" and "COUNT".
+11.	Iterate over each word in the input sentence.
+12.	Initialize counters for vowels and consonants for the current word.
+13.	Iterate over each character in the word.
+14.	Check if the character is a vowel using the isVowel method.
+15.	If true, increment the vowel counter.
+16.	If the character is a letter and not a vowel, increment the consonant counter.
+17.	Print the current word followed by 'V' for each vowel and 'C' for each consonant.
+18.	Print a new line after printing the counts for each word.
+19.	If the terminating character is incorrect, print "INCORRECT TERMINATING CHARACTER. INVALID INPUT".
+20.	End.
  */
 import java.util.Scanner;
 

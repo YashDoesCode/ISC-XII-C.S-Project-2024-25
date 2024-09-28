@@ -1,8 +1,29 @@
 package SDA;
-
-
-/*WAP to input the choice of sorting technique from user (Bubble sort, Selection Sort, Insertion sort), initialize a SDA of 10 integers 
- and sort them in ascending order using the selected technique. */
+/**
+Question 3: 
+WAP to input the choice of sorting technique from the user (Bubble sort, Selection Sort, Insertion sort), initialize a SDA of 10 integers and sort them in ascending order using the selected technique.
+Algorithm
+1.	Start
+2.	Define a class Sorting.
+3.	Declare an integer array arr and an integer l for the array size.
+4.	Create a constructor Sorting(int n) to initialize l and allocate memory for arr.
+5.	Define the method input() to read user input.
+6.	Inside input(), create a Scanner object.
+7.	Prompt the user to enter array elements.
+8.	Use a loop to read l integers into arr.
+9.	Define the method bubbleSort() for bubble sorting.
+10.	Use nested loops in bubbleSort() to compare and swap elements.
+11.	Define the method insertionSort() for insertion sorting.
+12.	In insertionSort(), loop through the array to insert elements in the correct position.
+13.	Define the method selectionSort() for selection sorting.
+14.	In selectionSort(), find and swap the minimum element with the first unsorted element.
+15.	Define the method display() to print the sorted array.
+16.	In display(), print "Sorted Array:" and loop to print each element.
+17.	Define the main() method as the entry point.
+18.	Inside main(), create a Scanner object and read the size of the array.
+19.	Call input(), display sorting options, and read the user's choice.
+20.	Based on the choice, call the corresponding sorting method and display the sorted array. End.
+ */
 
 import java.util.*;
 

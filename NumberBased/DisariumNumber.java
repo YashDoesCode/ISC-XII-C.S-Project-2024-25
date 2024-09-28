@@ -1,5 +1,6 @@
+package NumberBased;
 /**
-Question 16:
+Question 20:
 
 A Disarium Number is a number in which the sum of digits to the powers of this repetetive position is qual to the number itself.
 
@@ -32,8 +33,6 @@ INPUT: 111
 OUTPUT: Not a Disarium Number
 ----------------------------------------------------
 */
-package NumberBased;
-
 import java.util.Scanner;
 
 public class DisariumNumber
