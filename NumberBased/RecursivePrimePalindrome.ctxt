@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RecursivePrimePalindrome
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=n\ i
+comment2.target=boolean\ isPrime(int,\ int)
+comment3.params=n\ reversed\ original
+comment3.target=boolean\ isPalindrome(int,\ int,\ int)
+numComments=4

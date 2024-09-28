@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RecursiveBouncyNumber
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=number\ increasing\ decreasing\ index
+comment2.target=boolean\ isBouncy(int,\ boolean,\ boolean,\ int)
+numComments=3

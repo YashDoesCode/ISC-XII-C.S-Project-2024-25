@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Mixer
+comment1.params=nn
+comment1.target=Mixer(int)
+comment2.params=
+comment2.target=void\ accept()
+comment3.params=A
+comment3.target=Mixer\ mix(Mixer)
+comment4.params=
+comment4.target=void\ display()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

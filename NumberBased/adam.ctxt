@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=adam
+comment1.params=n
+comment1.target=int\ reverse(int)
+comment2.params=n
+comment2.target=boolean\ isprime(int)
+comment3.params=n
+comment3.target=boolean\ isadam(int)
+comment4.params=m\ n
+comment4.target=void\ check(int,\ int)
+comment5.params=
+comment5.target=void\ main()
+numComments=6

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MirrorInage
+comment1.params=arr
+comment1.target=void\ Display(int[][])
+comment2.params=arr
+comment2.target=int[][]\ arrMirrorer(int[][])
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

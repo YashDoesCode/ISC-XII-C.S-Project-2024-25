@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=KeywordCipher
+comment1.params=keyword
+comment1.target=java.lang.String\ DuplicateRemover(java.lang.String)
+comment2.params=keyword
+comment2.target=java.lang.String\ CipherAdder(java.lang.String)
+comment3.params=encoded\ keyword
+comment3.target=java.lang.String\ decryptMessage(java.lang.String,\ java.lang.String)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

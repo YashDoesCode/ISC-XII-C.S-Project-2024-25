@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=VowelWords
+comment1.params=ch
+comment1.target=boolean\ isVowel(char)
+comment2.params=sentence
+comment2.target=int\ countVowelWords(java.lang.String)
+comment3.params=sentence
+comment3.target=java.lang.String\ reorderWords(java.lang.String)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

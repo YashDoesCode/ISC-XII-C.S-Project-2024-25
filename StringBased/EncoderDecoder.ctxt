@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=EncoderDecoder
+comment1.params=s
+comment1.target=boolean\ isValid(java.lang.String)
+comment2.params=s
+comment2.target=java.lang.String\ Decoder(java.lang.String)
+comment3.params=st
+comment3.target=java.lang.String\ Caser(java.lang.String)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

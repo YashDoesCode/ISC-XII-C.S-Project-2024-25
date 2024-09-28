@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=MaxMinAvgArray
+comment1.params=array
+comment1.target=MaxMinAvgArray(int[])
+comment2.params=
+comment2.target=void\ bubbleSort()
+comment3.params=
+comment3.target=int\ findMax()
+comment4.params=
+comment4.target=int\ findMin()
+comment5.params=
+comment5.target=double\ calculateAverage()
+comment6.params=
+comment6.target=void\ printArray()
+comment7.params=args
+comment7.target=void\ main(java.lang.String[])
+numComments=8

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=LuckyNumbers
+comment1.params=arr\ step
+comment1.target=int[]\ remove(int[],\ int)
+comment2.params=N
+comment2.target=void\ Calculator(int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
