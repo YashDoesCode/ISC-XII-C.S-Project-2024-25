@@ -1,4 +1,4 @@
-# 👋 Yash Srivastava
+# About Me
 
 ## 💻 About Me
 I am a 17-year-old Class 12 student passionate about coding and digital content creation. I have experience in Core Java, Python, and basic HTML.
