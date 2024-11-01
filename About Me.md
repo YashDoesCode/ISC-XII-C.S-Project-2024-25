@@ -1,41 +1,17 @@
-# About Me
+# 👋 About Me
 I am a 17-year-old Class 12 student passionate about coding and digital content creation. I have experience in Core Java, Python, and basic HTML.
 
-## 🛠️ Skills
-- **Programming:** 
-  - Core Java
-  - Python
-  - Basic HTML
-  
-- **Editing Software:** 
-  - Adobe Premiere Pro
-  - Adobe Audition
-  - Adobe Photoshop
-  - Filmora X
-  - Canva
-  - Adobe Lightroom
-  - Adobe After Effects (basic)
+## 🛠️ Skills  
+My programming skills include Core Java, Python, and basic HTML. I am also proficient in various editing software, such as Adobe Premiere Pro, Adobe Audition, Adobe Photoshop, Filmora X, Canva, Adobe Lightroom, and have a basic understanding of Adobe After Effects.
 
-## 🎶 Hobbies
-- Listening to music
-- Learning about scriptures
-- Exploring AI technologies
+## 🎶 Hobbies  
+In my free time, I enjoy listening to music, learning about scriptures, and exploring AI technologies.
 
-## 🗂️ Tools
-- **Productivity:** 
-  - Notion
-  - Any.do
-  - Google Drive
-  
-- **Coding Environments:** 
-  - VS Code
-  - IntelliJ
-  - Notepad++
-  - BlueJ
-  - Replit
+## 🗂️ Tools  
+I utilize productivity tools like Notion, Any.do, and Google Drive to manage my tasks efficiently. For coding, I work in environments such as VS Code, IntelliJ, Notepad++, BlueJ, and Replit.
 
-## 📧 Contact
+## 📧 Contact  
 For inquiries, please email me at [business.theyashsrivastava07@gmail.com](mailto:business.theyashsrivastava07@gmail.com).
 
-## 🔍 HackerOne Profile
+## 🔍 HackerOne Profile  
 Check out my HackerOne profile [here](https://hackerone.com/yashdoeshackathon?type=user).
